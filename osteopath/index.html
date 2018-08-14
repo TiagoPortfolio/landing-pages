@@ -121,8 +121,25 @@
 					</div>
 
 					<div class="flex-wrapper prog-games">
-						<!-- PROGRESSION SYSTEM -->
-						<section id="member-ranks" class="prog-system">
+						<!-- TESTEMUNHOS -->
+						<section id="testemunhos" class="prog-system">
+							<h2 class="section_title">Testemunhos</h2>
+							<div>
+								<input type="checkbox" class="toggle" id="punch">
+								<label for="punch" onclick="this.innerHTML=='More details' ? this.innerHTML='Hide details' : this.innerHTML='More details'; gtag('event', 'select_content', {'event_category': 'buttons', 'event_label': 'rank_details'});">More details</label>
+								
+								<div class="ranks">
+									<div class="rank">
+										<span>Adicionar pequena frase de testemunho com nome da pessoa e link para a review</span>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="flex-wrapper prog-games">
+						<!-- CONSULTAS -->
+						<section id="consultas" class="prog-system">
 							<h2 class="section_title">Consultas</h2>
 							<div>
 								<input type="checkbox" class="toggle" id="punch">
@@ -130,7 +147,41 @@
 								
 								<div class="ranks">
 									<div class="rank">
-										<span>Informação sobre consultas</span>
+										<span>Informação sobre consultas, contactos e botao para fazer chamada</span>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="flex-wrapper prog-games">
+						<!-- CONTACTOS -->
+						<section id="contactos" class="prog-system">
+							<h2 class="section_title">Contactos</h2>
+							<div>
+								<input type="checkbox" class="toggle" id="punch">
+								<label for="punch" onclick="this.innerHTML=='More details' ? this.innerHTML='Hide details' : this.innerHTML='More details'; gtag('event', 'select_content', {'event_category': 'buttons', 'event_label': 'rank_details'});">More details</label>
+								
+								<div class="ranks">
+									<div class="rank">
+										<span>Nº telefone, morada, google maps embed</span>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="flex-wrapper prog-games">
+						<!-- SOBRE -->
+						<section id="sobre" class="prog-system">
+							<h2 class="section_title">Sobre</h2>
+							<div>
+								<input type="checkbox" class="toggle" id="punch">
+								<label for="punch" onclick="this.innerHTML=='More details' ? this.innerHTML='Hide details' : this.innerHTML='More details'; gtag('event', 'select_content', {'event_category': 'buttons', 'event_label': 'rank_details'});">More details</label>
+								
+								<div class="ranks">
+									<div class="rank">
+										<span>Informação sobre Dr. Mesquita de Sousa</span>
 									</div>
 								</div>
 							</div>
@@ -140,19 +191,11 @@
 					<!-- FOOTER -->
 					<div class="content-box">
 						<section>
-							<h2 class="section_title">Join us on</h2>
+							<h2 class="section_title">Veja mais avaliações em</h2>
+							<span>Link para Yelp, Zaask e Doctoralia</span>
 							<div class="footer">
 								<a href="//discord.me/snax" target="_blank" rel="noopener" onclick="gtag('event', 'select_content', {'event_category': 'footer', 'event_label': 'Discord'});">
 									<img class="lazyload" src="assets/imgs/snaxbanner.png" data-src="assets/imgs/social/discord-small.svg" data-srcset="assets/imgs/social/discord-small.svg" height="60" title="Discord" alt="Discord"/>
-								</a>
-								<a href="https://twitter.com/snaxkr3w" target="_blank" rel="noopener" onclick="gtag('event', 'select_content', {'event_category': 'footer', 'event_label': 'Twitter'});">
-									<img class="lazyload" src="assets/imgs/snaxbanner.png" data-src="assets/imgs/social/twitter.svg" data-srcset="assets/imgs/social/twitter.svg" height="50" title="Twitter" alt="Twitter"/>
-								</a>
-								<a href="https://www.facebook.com/snaxgaming" target="_blank" rel="noopener" onclick="gtag('event', 'select_content', {'event_category': 'footer', 'event_label': 'Facebook'});">
-									<img class="lazyload" src="assets/imgs/snaxbanner.png" data-src="assets/imgs/social/facebook.png" data-srcset="assets/imgs/social/facebook.png" height="50" title="Facebook" alt="Facebook"/>
-								</a>
-								<a href="https://www.youtube.com/channel/UCqE1nXJBnNuZThoeNG9618Q/videos" target="_blank" rel="noopener" onclick="gtag('event', 'select_content', {'event_category': 'footer', 'event_label': 'Youtube'});">
-									<img class="lazyload" src="assets/imgs/snaxbanner.png" data-src="assets/imgs/social/youtube.png" data-srcset="assets/imgs/social/youtube.png" height="50" title="Youtube" alt="Youtube"/>
 								</a>
 							</div>
 						</section>

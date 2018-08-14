@@ -40,6 +40,7 @@ Theme Styles
 
 html {
   height: 100%;
+  font-family: 'Open Sans Regular', sans-serif;
 }
 
 body {
@@ -49,7 +50,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5 !important;
   -webkit-font-smoothing: antialiased !important;
-  /*background-image: url(../imgs/grey_background.jpg) !important;*/
+  background-image: url(../imgs/grey_background.jpg) !important;
   background-size: cover !important;
 }
 
@@ -134,13 +135,9 @@ form {
 }
 
 @font-face {
-  font-family:"Open Sans";
-  src: url("../fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
-}
-
-@font-face {
-  font-family:"Josefin Sans";
-  src: url("../fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+  font-display: swap;
 }
 
 .content-wrapper {
@@ -205,7 +202,8 @@ form {
   background: rgba(37, 37, 37, 0.2);
 }
 
-.introduction h1 {
+.introduction h1,
+.introduction span {
   color: #ffecec;
   font-size: 15px;
   font-weight: normal;
@@ -356,7 +354,7 @@ div.content-box.discord img:hover {
   padding: 0px 10px;
 }
 
-.prog-system section {
+.prog-system div.ranks {
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -381,14 +379,14 @@ input.toggle {
   display: none;
 }
 
-input.toggle ~ section .rank-desc {
+input.toggle ~ div.ranks .rank-desc {
   max-height: 0px;
   padding: 0px;
   margin-top: 0px;
   overflow: hidden;
 }
 
-input.toggle:checked ~ section .rank-desc {
+input.toggle:checked ~ div.ranks .rank-desc {
   max-height: 9000px;
   padding: 10px 15px;
   margin-top: 15px;
@@ -459,36 +457,6 @@ input.toggle:checked ~ section .rank-desc {
   100%  {transform: translateY(-10px); opacity: 0;}
 }
 
-img.up-arrow {
-  top: 13px;
-  margin-top: -5px;
-  opacity: 0;
-  -webkit-animation: move-up 2s infinite linear;
-  -moz-animation: move-up 2s infinite linear;
-  -o-animation: move-up 2s infinite linear;
-  animation: move-up 2s infinite linear;
-}
-
-.prog-system img.up-arrow:nth-of-type(1) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.prog-system img.up-arrow:nth-of-type(2) {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.prog-system img.up-arrow:nth-of-type(3) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.prog-system img.up-arrow:nth-of-type(4) {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
 .games, .footer {
   display:flex;
   flex-wrap: wrap;
@@ -504,56 +472,12 @@ img.up-arrow {
   margin: 0 20px;
 }
 
-@-webkit-keyframes mxm-shadow {
-  0%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-  50% {text-shadow: 1px 1px 25px #335866, 0px 0px 20px #335866, 0px 0px 20px #335866;}
-  100%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-}
-@-moz-keyframes mxm-shadow {
-  0%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-  50% {text-shadow: 1px 1px 25px #335866, 0px 0px 20px #335866, 0px 0px 20px #335866;}
-  100%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-}
-@-o-keyframes mxm-shadow {
-  0%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-  50% {text-shadow: 1px 1px 25px #335866, 0px 0px 20px #335866, 0px 0px 20px #335866;}
-  100%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-}
-@keyframes mxm-shadow {
-  0%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-  50% {text-shadow: 1px 1px 25px #335866, 0px 0px 20px #335866, 0px 0px 20px #335866;}
-  100%   {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-}
-
-.content-box.mxm a {
-  margin: 0 auto;
-}
-
-.content-box.mxm img {
-  width: 100%;
-}
-
-.content-box.mxm .section_title {
-  margin: 0 0 5px;
-  font-size: 30px;
-  font-weight: normal;
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  -webkit-animation: mxm-shadow 3s infinite linear;
-  -moz-animation: mxm-shadow 3s infinite linear;
-  -o-animation: mxm-shadow 3s infinite linear;
-  animation: mxm-shadow 3s infinite linear;
-}
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
 @media screen and (max-width: 400px) {
   .content-box.discord .section_title {
     font-size: 18px;
-  }
-  
-  .content-box.mxm .section_title {
-    font-size: 25px;
   }
 
   .logo {
@@ -605,10 +529,6 @@ Small Device Styles
 
   .games img {
     height: 70px;
-  }
-
-  .games img.mxm {
-    height: 60px;
   }
 }
 
