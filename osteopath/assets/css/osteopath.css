@@ -53,7 +53,7 @@ body {
   /*background-image: url(../imgs/grey_background.jpg) !important;*/
   background-image: url(../imgs/test_background_cut.jpeg) !important;
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
   background-repeat: no-repeat;
 }
 
@@ -91,8 +91,6 @@ a {
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
 }
-
-a:hover, a:focus {text-decoration: underline;}
 
 em {
   font-style: italic;
@@ -145,6 +143,15 @@ form {
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
        url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/open-sans-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .content-wrapper {
@@ -202,103 +209,146 @@ form {
 }
 
 .introduction {
+  color: white;
   font-size: 15px;
   padding: 5px 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
-  background: rgba(37, 37, 37, 0.2);
+  box-shadow: 0px 0px 60px rgb(39, 212, 18);
+    background: rgba(37, 37, 37, 0.48);
 }
 
 .introduction h1,
 .introduction span {
+  font-size: 2.5em;
   color: #ffecec;
-  font-size: 15px;
-  font-weight: normal;
   letter-spacing: 0px;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 0 0;
   text-shadow: 1px 2px 2px black; 
 } 
 
+.introduction p {
+  font-family: Roboto;
+  font-size: 1.3em;
+}
+
 .introduction .tagline {
+  line-height: 1.3em;
   font-size: 1.2em;
 }
 
-.content-box.discord .section_title {
-  font-size: 21px;
-  letter-spacing: 0px;
-}
-
 @keyframes circle-fade {
-  0%   {box-shadow: 0px 0px 0px 0px white;}
-  37%  {box-shadow: 0px 0px 10px 2px white;}
-  75%  {box-shadow: 0px 0px 0px 0px white;}
-  80%  {box-shadow: 2px 2px 1px 1px white;}
+  0%   {box-shadow: 0px 0px 0px 0px black;}
+  37%  {box-shadow: 0px 0px 10px 2px black;}
+  75%  {box-shadow: 0px 0px 0px 0px black;}
+  80%  {box-shadow: 2px 2px 1px 1px black;}
   85%  {box-shadow: 2px -2px 1px 1px white;}
   90%  {box-shadow: -2px -2px 1px 1px white;}
-  95%  {box-shadow: -2px 2px 1px 1px white;}
-  97%  {box-shadow: 2px 2px 1px 1px white;}
-  100% {box-shadow: 0px 0px 0px 0px white;}
+  95%  {box-shadow: -2px 2px 1px 1px black;}
+  97%  {box-shadow: 2px 2px 1px 1px black;}
+  100% {box-shadow: 0px 0px 0px 0px black;}
 }
 
 @-webkit-keyframes circle-fade {
-  0%   {box-shadow: 0px 0px 0px 0px white;}
-  37%  {box-shadow: 0px 0px 10px 2px white;}
-  75%  {box-shadow: 0px 0px 0px 0px white;}
-  80%  {box-shadow: 2px 2px 1px 1px white;}
+  0%   {box-shadow: 0px 0px 0px 0px black;}
+  37%  {box-shadow: 0px 0px 10px 2px black;}
+  75%  {box-shadow: 0px 0px 0px 0px black;}
+  80%  {box-shadow: 2px 2px 1px 1px black;}
   85%  {box-shadow: 2px -2px 1px 1px white;}
   90%  {box-shadow: -2px -2px 1px 1px white;}
-  95%  {box-shadow: -2px 2px 1px 1px white;}
-  97%  {box-shadow: 2px 2px 1px 1px white;}
-  100% {box-shadow: 0px 0px 0px 0px white;}
+  95%  {box-shadow: -2px 2px 1px 1px black;}
+  97%  {box-shadow: 2px 2px 1px 1px black;}
+  100% {box-shadow: 0px 0px 0px 0px black;}
 }
 
 @-moz-keyframes circle-fade {
-  0%   {box-shadow: 0px 0px 0px 0px white;}
-  37%  {box-shadow: 0px 0px 10px 2px white;}
-  75%  {box-shadow: 0px 0px 0px 0px white;}
-  80%  {box-shadow: 2px 2px 1px 1px white;}
+  0%   {box-shadow: 0px 0px 0px 0px black;}
+  37%  {box-shadow: 0px 0px 10px 2px black;}
+  75%  {box-shadow: 0px 0px 0px 0px black;}
+  80%  {box-shadow: 2px 2px 1px 1px black;}
   85%  {box-shadow: 2px -2px 1px 1px white;}
   90%  {box-shadow: -2px -2px 1px 1px white;}
-  95%  {box-shadow: -2px 2px 1px 1px white;}
-  97%  {box-shadow: 2px 2px 1px 1px white;}
-  100% {box-shadow: 0px 0px 0px 0px white;}
+  95%  {box-shadow: -2px 2px 1px 1px black;}
+  97%  {box-shadow: 2px 2px 1px 1px black;}
+  100% {box-shadow: 0px 0px 0px 0px black;}
 }
 
 @-o-keyframes circle-fade {
-  0%   {box-shadow: 0px 0px 0px 0px white;}
-  37%  {box-shadow: 0px 0px 10px 2px white;}
-  75%  {box-shadow: 0px 0px 0px 0px white;}
-  80%  {box-shadow: 2px 2px 1px 1px white;}
+  0%   {box-shadow: 0px 0px 0px 0px black;}
+  37%  {box-shadow: 0px 0px 10px 2px black;}
+  75%  {box-shadow: 0px 0px 0px 0px black;}
+  80%  {box-shadow: 2px 2px 1px 1px black;}
   85%  {box-shadow: 2px -2px 1px 1px white;}
   90%  {box-shadow: -2px -2px 1px 1px white;}
-  95%  {box-shadow: -2px 2px 1px 1px white;}
-  97%  {box-shadow: 2px 2px 1px 1px white;}
-  100% {box-shadow: 0px 0px 0px 0px white;}
+  95%  {box-shadow: -2px 2px 1px 1px black;}
+  97%  {box-shadow: 2px 2px 1px 1px black;}
+  100% {box-shadow: 0px 0px 0px 0px black;}
 }
 
-div.content-box.discord {
+div.content-box.botao_consultas {
   margin-top: 20px;
 }
 
-div.content-box.discord a {
+/*div.content-box.discord a {
   width: 270px;
-  margin: 0 auto;
-}
+}*/
 
-div.content-box.discord img {
+div.content-box.botao_consultas a {
+  display: flex;
+  margin: 0 auto;
   height: 90px;
+  padding: 20px;
   cursor: pointer;
+  min-width: 380px;
+  transition: background 0.5s;
+  background: #4eb9188c;
   border-radius: 20px;
+  justify-content: space-evenly;
   -webkit-animation: circle-fade 2s infinite linear;
   -moz-animation: circle-fade 2s infinite linear;
   -o-animation: circle-fade 2s infinite linear;
   animation: circle-fade 2s infinite linear;
 }
 
-div.content-box.discord img:hover {
-  background: rgba(255, 255, 255, 0.08);
+div.content-box.botao_consultas a:hover {
+  background: #4eb918de;
 }
 
+div.content-box.botao_consultas a span {
+  color: white;
+  font-family: Roboto;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-left: 10px;
+  align-self: center;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px 2px black;
+}
+
+div.content-box.botao_consultas a img {
+  animation: shake 3s cubic-bezier(.36,.07,.19,.97) infinite both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  5%, 45% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  10%, 40% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  15%, 25%, 35% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  20%, 30% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 .flex-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -483,10 +533,6 @@ input.toggle:checked ~ div.ranks .rank-desc {
 Small Device Styles
 *******************************************************************************/
 @media screen and (max-width: 400px) {
-  .content-box.discord .section_title {
-    font-size: 18px;
-  }
-
   .logo {
     height: 130px;
   }
