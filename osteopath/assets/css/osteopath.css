@@ -51,9 +51,9 @@ body {
   line-height: 1.5 !important;
   -webkit-font-smoothing: antialiased !important;
   /*background-image: url(../imgs/grey_background.jpg) !important;*/
-  background-image: url(../imgs/test_background_cut.jpeg) !important;
+  background-image: url(../imgs/test_background.jpeg) !important;
   background-size: cover;
-  background-position: center 70%;
+  background-position: center 125%;
   background-repeat: no-repeat;
 }
 
