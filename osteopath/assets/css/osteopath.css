@@ -44,17 +44,17 @@ html {
 }
 
 body {
-  padding: 40px 0px 20px;
+  padding: 0px 0px 20px;
   box-sizing: border-box !important;
   color: black !important;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5 !important;
   -webkit-font-smoothing: antialiased !important;
-  /*background-image: url(../imgs/grey_background.jpg) !important;*/
-  background-image: url(../imgs/test_background.jpeg) !important;
+  /*background-image: url(../imgs/test_background.jpeg) !important;*/
+  /*background-image: url(../imgs/background2.png) !important;
   background-size: cover;
   background-position: center 125%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,7 +157,6 @@ form {
 .content-wrapper {
   display: flex;
   align-items: center;
-  padding: 0 10px;
 }
 
 .center {
@@ -199,13 +198,17 @@ form {
     rgba(255, 255, 255, 0.2) 0px 0px 10px;
 }
 
-.center .inner:first-child {
-  padding-top: 0px; 
-}
-
 .logo {
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 20px 2px #ebebeb;
+}
+
+.intro_background {
+  padding: 40px;
+  background-image: url(../imgs/background2_cut.png) !important;
+  background-size: cover;
+  background-position: center 100%;
+  background-repeat: no-repeat;
 }
 
 .introduction {
