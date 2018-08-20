@@ -50,7 +50,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5 !important;
   -webkit-font-smoothing: antialiased !important;
-  background-image: url(../imgs/grey_background.jpg) !important;
+  background-image: url("../imgs/grey_background.webp"), url(../imgs/grey_background.jpg) !important;
   background-size: cover !important;
 }
 
@@ -544,7 +544,9 @@ Small Device Styles
     font-size: 28px !important;
   }
 
-  .introduction h1, .flex-wrapper .snax-pros {
+  .introduction h1,
+  .introduction span,
+  .flex-wrapper .snax-pros {
     font-size: 13px !important;
   }
 
