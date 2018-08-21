@@ -50,11 +50,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5 !important;
   -webkit-font-smoothing: antialiased !important;
-  /*background-image: url(../imgs/test_background.jpeg) !important;*/
-  /*background-image: url(../imgs/background2.png) !important;
-  background-size: cover;
-  background-position: center 125%;
-  background-repeat: no-repeat;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -203,13 +198,28 @@ form {
   -webkit-box-shadow: 0 0 20px 2px #ebebeb;
 }
 
+@keyframes images {
+  0% {
+    background-image: url(../imgs/background2_cut.webp), url(../imgs/background2_cut.jpg) !important;
+  }
+  
+  50% {
+   background-image: url(../imgs/test_background.webp), url(../imgs/test_background.jpeg) !important;
+  }
+  
+  100% {
+    background-image: url(../imgs/background2_cut.webp), url(../imgs/background2_cut.jpg) !important;
+  }
+}
 .intro_background {
   padding: 40px;
-  background-image: url(../imgs/background2_cut.webp), url(../imgs/grey_background.jpg) !important;
+  background-image: url(../imgs/background2_cut.webp), url(../imgs/background2_cut.jpg) !important;
   background-size: cover;
   background-position: center 100%;
   background-repeat: no-repeat;
+  animation: images 10s linear 0s infinite alternate;
 }
+
 
 .introduction {
   color: white;
@@ -301,7 +311,7 @@ div.content-box.botao_consultas a {
   height: 90px;
   padding: 20px;
   cursor: pointer;
-  min-width: 380px;
+  width: 380px;
   transition: background 0.5s;
   background: #4eb9188c;
   border-radius: 20px;
@@ -536,8 +546,20 @@ input.toggle:checked ~ div.ranks .rank-desc {
 Small Device Styles
 *******************************************************************************/
 @media screen and (max-width: 400px) {
+  body {
+    padding: 0px 0px 10px;
+  }
+
   .logo {
     height: 130px;
+  }
+
+  div.content-box.botao_consultas a {
+  	width: 280px;
+  }
+
+  div.content-box.botao_consultas a span {
+  	font-size: 1.3em;
   }
 
   .footer a {
@@ -552,9 +574,6 @@ Small Device Styles
     height: 40px;
   }
 
-  body {
-    padding: 30px 0px 10px;
-  }
 }
 
 @media screen and (max-width: 600px) {
