@@ -40,14 +40,15 @@ Theme Styles
 
 html {
 	height: 100%;
-	font-family: 'Open Sans Regular', sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 
 body {
 	padding: 0px 0px 20px;
 	box-sizing: border-box !important;
 	color: black !important;
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+
 	line-height: 1.5 !important;
 	-webkit-font-smoothing: antialiased !important;
 }
@@ -120,9 +121,13 @@ ul {
 }
 
 hr {
-	height: 1px;
-	margin-bottom: 5px;
-	border: none;
+	display: flex;
+	width: 100%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 form {
@@ -176,21 +181,11 @@ form {
 }
 
 .section_title {
-	margin: 0px 0px 20px;
-	color: #FFF;
-	font-size: 35px;
-	font-weight: 700;
-	text-shadow: #111 0px 5px 10px;
-}
-
-.twitter-feed .section_title,
-.snax-pros .section_title,
-.prog-system .section_title,
-.games .section_title {
-	color: rgb(0, 155, 255);
-	text-shadow: rgb(0, 155, 255) 1px 0px 0px,
-		#000000 3px 3px 5px,
-		rgba(255, 255, 255, 0.2) 0px 0px 10px;
+	margin: 0px 0px 40px;
+  color: #53b548;
+  font-size: 2.5em;
+  letter-spacing: 0px;
+  font-weight: 700;
 }
 
 .logo {
@@ -332,12 +327,11 @@ form {
 	font-size: 2.5em;
 	color: #ffecec;
 	letter-spacing: 0px;
-	margin: 10px 0 0 0;
+	margin: 5px 0 0 0;
 	text-shadow: 1px 2px 2px black; 
 } 
 
 .introduction p {
-	font-family: Roboto;
 	font-size: 1.3em;
 }
 
@@ -459,12 +453,50 @@ div.content-box.botao_consultas a img {
 		transform: translate3d(4px, 0, 0);
 	}
 }
+
 .flex-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 20px auto;
+}
+
+#testemunhos {
+	width: 100%;
+}
+
+.testemunho-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.testemunho {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+  justify-content: space-between;
+  max-width: 25%;
+  min-width: 230px;
+  margin: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 5px 20px 5px rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+	box-shadow: 0 5px 20px 5px rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+	font-style: italic;
+	color: #9b9b9b;
+}
+
+.testemunho .comment {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.testemunho-source {
+	margin-top: 10px;
+	align-self: flex-end;
 }
 
 .flex-wrapper .snax-pros {
