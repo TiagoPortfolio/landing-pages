@@ -193,36 +193,18 @@ form {
 	-webkit-box-shadow: 0 0 20px 2px #ebebeb;
 }
 
-.background {
+.intro-background {
 	position: relative;
 }
-
-/*.background img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	max-width: none;
-}
-
-.background img:nth-of-type(1) {
-	-webkit-animation-delay: 2s;
-	animation-delay: 2s;
-	animation-name: fade;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 5s;
-	animation-direction: alternate;
-}
-*/
 
 .background > img {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 102%;
 	max-width: none; 
 	opacity: 0;
 	z-index: 0;
@@ -459,7 +441,7 @@ div.content-box.botao_consultas a img {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	max-width: 1200px;
-	margin: 20px auto;
+	margin: 10px auto;
 }
 
 #testemunhos {
@@ -478,14 +460,11 @@ div.content-box.botao_consultas a img {
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-  justify-content: space-between;
+  justify-content: start;
   max-width: 25%;
   min-width: 230px;
   margin: 20px;
-	padding: 20px;
-	border-radius: 10px;
-	-webkit-box-shadow: 0 5px 20px 5px rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
-	box-shadow: 0 5px 20px 5px rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+	padding: 0 20px;
 	font-style: italic;
 	color: #9b9b9b;
 }
@@ -494,9 +473,12 @@ div.content-box.botao_consultas a img {
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 
+.testemunho-person {
+	font-weight: 500;
+}
+
 .testemunho-source {
 	margin-top: 10px;
-	align-self: flex-end;
 }
 
 .flex-wrapper .snax-pros {
